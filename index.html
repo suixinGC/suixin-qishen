@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -538,7 +539,7 @@ body > * {
 }
 /* ===== 背景图设置 ===== */
 body {
-    background-image: url('splash.png');
+    background-image: url('splash.jpg2');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;        /* 保证整张图片可见，标题完整 */
@@ -1067,7 +1068,7 @@ body {
 
     <!-- 头部信息 -->
     <div class="header">
-        <h1>穗星数据库-七神研究所 v1.5.50
+        <h1>穗星数据库-七神研究所 v1.6.10
         <div class="version">当前游戏版本：6.3 </div>
         <div class="countdown"></div>
         <div>
@@ -1103,6 +1104,7 @@ body {
             <button class="nav-btn" onclick="toggleContent('bossSection')">值得铭记的强敌</button>
             <button class="nav-btn" onclick="toggleContent('sceneSection')">所有场景/秘境ID</button>
             <button class="nav-btn" onclick="toggleContent('dreamSection')">自定义怪物</button>
+<button class="nav-btn" onclick="toggleContent('loadTipSection')">道具大全</button>
         </div>
     </div>
 
@@ -1118,7 +1120,7 @@ body {
     <button class="nav-btn" onclick="toggleContent('geographySection')">地理志</button>
     <button class="nav-btn" onclick="toggleContent('tutorialSection')">教程</button>
     <button class="nav-btn" onclick="toggleContent('eventSection')">活动</button>
-    <button class="nav-btn" onclick="toggleContent('loadTipSection')">加载提示</button>
+    
 </div>
 </div>
 
@@ -1141,11 +1143,11 @@ body {
 
 <!-- 首页模块 - 默认展开 -->
 <section id="homeSection" class="content-section" style="display: block;">
-    <h2 class="section-title">欢迎使用穗星数据库/v1.5.50公告：<div class="boss-title" style="color: #ff4d4f; font-size: 16px;">
-1.AI系统助手已上线<br>
-2.月之七祈愿卡池内容开放
-3.新增<深境螺旋>6.5的B部分内容
-4.圣遗物配置教程重做优化完成
+    <h2 class="section-title">欢迎使用穗星数据库/v1.6.10公告：<div class="boss-title" style="color: #ff4d4f; font-size: 16px;">
+1.AI系统助手test中<br>
+2.新增并开放<道具大全>模块<br>
+3.新增道具大全独立搜索框<br>
+4.优化搜索逻辑<br>
 5.优化文本描述<br>
 </h2>
     
@@ -5871,7 +5873,10 @@ body {
             点击部位按钮自动修改第4位编码（1花2羽5沙4杯3冠），初始词条数决定第5位。
         </div>
     </div>
-</div>
+   </div>
+</section>
+</section>
+
 
     <section id="spiralSection" class="content-section">
     <h2 class="section-title">深境螺旋</h2>
@@ -6211,18 +6216,30 @@ body {
 
         <!-- 卡池内容容器，用于高亮定位 -->
         <div id="gachaContentContainer">
+ <!-- [月之八] 角色祈愿卡池 -->
+<div class="cmd-card" style="background: #f9f0ff; border-left: 4px solid #722ed1;">
+    <div class="boss-title" style="color: #722ed1;">「月之八」映夏!归乡?千灵节!</div>
+    <div class="cmd-desc">
+        <div style="margin-bottom: 6px; color: #888;">2026.07.01～2026.07.21 / 2026.07.21～2026.08.11</div>
+        <strong>上半五星：</strong> <span class="five-star">桑多涅</span> <span class="five-star">雷电将军</span><br>
+         <strong>四星陪跑：</strong> <span class="four-star">？？？</span> <span class="four-star">？？？</span> <span class="four-star">？？？</span><br>
+        <strong>下半五星：</strong> <span class="five-star">哥伦比娅</span> <span class="five-star">茜特拉莉</span><br>
+         <strong>四星陪跑：</strong> <span class="four-star">？？？</span> <span class="four-star">？？？</span> <span class="four-star">？？？</span><br>
+    </div>
+    <img src="splash.jpg54" alt="月之八角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
+</div>
+
             <!-- [月之七] 角色祈愿卡池 -->
 <div class="cmd-card" style="background: #f9f0ff; border-left: 4px solid #722ed1;">
-    <div class="boss-title" style="color: #722ed1;">「月之七」</div>
+    <div class="boss-title" style="color: #722ed1;">「月之七」虚空劫灰往世书</div>
     <div class="cmd-desc">
-        <div style="margin-bottom: 6px; color: #888;">（暂无时间数据）</div>
+        <div style="margin-bottom: 6px; color: #888;">2026.05.20～2026.06.10 / 2026.06.10～2026.06.30</div>
         <strong>上半五星：</strong> <span class="five-star">尼可·莱恩</span> <span class="five-star">杜林</span><br>
-        <strong>四星陪跑：</strong> （暂无数据）<br>
+         <strong>四星陪跑：</strong> <span class="four-star">布伦妮</span> <span class="four-star">雷泽</span> <span class="four-star">菲谢尔</span><br>
         <strong>下半五星：</strong> <span class="five-star">洛恩</span> <span class="five-star">玛薇卡</span><br>
-        <strong>四星陪跑：</strong> （暂无数据）
+         <strong>四星陪跑：</strong> <span class="four-star">米卡</span> <span class="four-star">香菱</span> <span class="four-star">班尼特</span><br>
     </div>
-    <img src="splash.jpg54" alt="月之七角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
-</div>
+   
 
 <!-- [6.6] 角色祈愿卡池 -->
 <!-- 历史卡池 - 月之六 -->
@@ -6235,7 +6252,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">菈乌玛</span> <span class="five-star">奈芙尔</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">行秋</span> <span class="four-star">绮良良</span> <span class="four-star">雅珂达</span><br>
     </div>
-    <img src="splash.jpg5" alt="月之六角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
+
 </div>
 
 <!-- 历史卡池 - 月之五 -->
@@ -6248,8 +6265,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">丝柯克</span> <span class="five-star">爱可菲</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">塔利雅</span> <span class="four-star">坎蒂丝</span> <span class="four-star">夏洛蒂</span>
     </div>
-    <img src="splash.jpg6" alt="月之五角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
-</div>
+    </div>
 
 <!-- 历史卡池 - 月之四 -->
 <div class="cmd-card" style="background: #f9f0ff; border-left: 4px solid #722ed1;">
@@ -6261,7 +6277,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">兹白</span> <span class="five-star">那维莱特</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">叶洛亚</span> <span class="four-star">爱诺</span> <span class="four-star">五郎</span>
     </div>
-    <img src="splash.jpg7" alt="月之四角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
+   
 </div>
 
 <!-- 历史卡池 - 月之三 -->
@@ -6274,7 +6290,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">瓦雷莎</span> <span class="five-star">希诺宁</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">伊安珊</span> <span class="four-star">夏沃蕾</span> <span class="four-star">嘉明</span>
     </div>
-    <img src="splash.jpg8" alt="月之三角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
+   
 </div>
 
 <!-- 历史卡池 - 月之二 -->
@@ -6287,8 +6303,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">阿蕾奇诺</span> <span class="five-star">钟离</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">蓝砚</span> <span class="four-star">罗莎莉亚</span> <span class="four-star">云堇</span>
     </div>
-    <img src="splash.jpg9" alt="月之二角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
-</div>
+    </div>
 
 <!-- 历史卡池 - 月之一 -->
 <div class="cmd-card" style="background: #f9f0ff; border-left: 4px solid #722ed1;">
@@ -6300,7 +6315,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">菲林斯</span> <span class="five-star">夜兰</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">爱诺</span> <span class="four-star">砂糖</span> <span class="four-star">多莉</span>
     </div>
-    <img src="splash.jpg10" alt="月之一角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
+   
 </div>
 
 <!-- 历史卡池 - 5.8 -->
@@ -6313,8 +6328,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">玛拉妮</span> <span class="five-star">恰斯卡</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">伊法</span> <span class="four-star">欧洛伦</span> <span class="four-star">班尼特</span>
     </div>
-    <img src="splash.jpg11" alt="5.8角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
-</div>
+    </div>
 
 <!-- 历史卡池 - 5.7 -->
 <div class="cmd-card" style="background: #f9f0ff; border-left: 4px solid #722ed1;">
@@ -6326,7 +6340,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">玛薇卡</span> <span class="five-star">艾梅莉埃</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">伊安珊</span> <span class="four-star">瑶瑶</span> <span class="four-star">香菱</span>
     </div>
-    <img src="splash.jpg12" alt="5.7角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
+   
 </div>
 
 <!-- 历史卡池 - 5.6 -->
@@ -6339,8 +6353,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">基尼奇</span> <span class="five-star">雷电将军</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">托马</span> <span class="four-star">九条裟罗</span> <span class="four-star">琳妮特</span>
     </div>
-    <img src="splash.jpg13" alt="5.6角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
-</div>
+  </div>
 
 <!-- 历史卡池 - 5.5 -->
 <div class="cmd-card" style="background: #f9f0ff; border-left: 4px solid #722ed1;">
@@ -6352,8 +6365,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">希诺宁</span> <span class="five-star">温迪</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">珐露珊</span> <span class="four-star">北斗</span> <span class="four-star">烟绯</span>
     </div>
-    <img src="splash.jpg14" alt="5.5角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
-</div>
+    </div>
 
 <!-- 历史卡池 - 5.4 -->
 <div class="cmd-card" style="background: #f9f0ff; border-left: 4px solid #722ed1;">
@@ -6365,7 +6377,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">芙宁娜</span> <span class="five-star">莱欧斯利</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">夏洛蒂</span> <span class="four-star">重云</span> <span class="four-star">米卡</span>
     </div>
-    <img src="splash.jpg15" alt="5.4角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
+    
 </div>
 
 <!-- 历史卡池 - 5.3 -->
@@ -6378,7 +6390,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">阿蕾奇诺</span> <span class="five-star">克洛琳德</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">蓝砚</span> <span class="four-star">夏沃蕾</span> <span class="four-star">罗莎莉亚</span>
     </div>
-    <img src="splash.jpg16" alt="5.3角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
+    
 </div>
 
 <!-- 历史卡池 - 5.2 -->
@@ -6391,8 +6403,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">那维莱特</span> <span class="five-star">钟离</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">瑶瑶</span> <span class="four-star">菲谢尔</span> <span class="four-star">鹿野院平藏</span>
     </div>
-    <img src="splash.jpg17" alt="5.2角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
-</div>
+    </div>
 
 <!-- 历史卡池 - 5.1 -->
 <div class="cmd-card" style="background: #f9f0ff; border-left: 4px solid #722ed1;">
@@ -6404,8 +6415,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">纳西妲</span> <span class="five-star">胡桃</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">赛索斯</span> <span class="four-star">行秋</span> <span class="four-star">久岐忍</span>
     </div>
-    <img src="splash.jpg18" alt="5.1角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
-</div>
+    </div>
 
 <!-- 历史卡池 - 5.0 -->
 <div class="cmd-card" style="background: #f9f0ff; border-left: 4px solid #722ed1;">
@@ -6417,7 +6427,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">基尼奇</span> <span class="five-star">雷电将军</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">夏沃蕾</span> <span class="four-star">九条裟罗</span> <span class="four-star">托马</span>
     </div>
-    <img src="splash.jpg19" alt="5.0角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
+    
 </div>
 
 <!-- 历史卡池 - 4.8 -->
@@ -6430,7 +6440,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">艾梅莉埃</span> <span class="five-star">夜兰</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">香菱</span> <span class="four-star">雷泽</span> <span class="four-star">烟绯</span>
     </div>
-    <img src="splash.jpg20" alt="4.8角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
+  
 </div>
 
 <!-- 历史卡池 - 4.7 -->
@@ -6443,7 +6453,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">希格雯</span> <span class="five-star">芙宁娜</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">诺艾尔</span> <span class="four-star">罗莎莉亚</span> <span class="four-star">嘉明</span>
     </div>
-    <img src="splash.jpg21" alt="4.7角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
+
 </div>
 
 <!-- 历史卡池 - 4.6 -->
@@ -6456,7 +6466,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">流浪者</span> <span class="five-star">白术</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">北斗</span> <span class="four-star">珐露珊</span> <span class="four-star">莱依拉</span>
     </div>
-    <img src="splash.jpg22" alt="4.6角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
+
 </div>
 
 <!-- 历史卡池 - 4.5 -->
@@ -6469,7 +6479,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">那维莱特</span> <span class="five-star">枫原万叶</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">烟绯</span> <span class="four-star">行秋</span> <span class="four-star">芭芭拉</span>
     </div>
-    <img src="splash.jpg23" alt="4.5角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
+    
 </div>
 
 <!-- 历史卡池 - 4.4 -->
@@ -6482,7 +6492,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">魈</span> <span class="five-star">八重神子</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">辛焱</span> <span class="four-star">凝光</span> <span class="four-star">瑶瑶</span>
     </div>
-    <img src="splash.jpg24" alt="4.4角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
+    
 </div>
 
 <!-- 历史卡池 - 4.3 -->
@@ -6495,8 +6505,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">雷电将军</span> <span class="five-star">宵宫</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">夏沃蕾</span> <span class="four-star">班尼特</span> <span class="four-star">九条裟罗</span>
     </div>
-    <img src="splash.jpg25" alt="4.3角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
-</div>
+    </div>
 
 <!-- 历史卡池 - 4.2 -->
 <div class="cmd-card" style="background: #f9f0ff; border-left: 4px solid #722ed1;">
@@ -6508,7 +6517,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">赛诺</span> <span class="five-star">神里绫人</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">绮良良</span> <span class="four-star">香菱</span> <span class="four-star">久岐忍</span>
     </div>
-    <img src="splash.jpg26" alt="4.2角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
+    
 </div>
 
 <!-- 历史卡池 - 4.1 -->
@@ -6521,7 +6530,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">莱欧斯利</span> <span class="five-star">温迪</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">重云</span> <span class="four-star">托马</span> <span class="four-star">多莉</span>
     </div>
-    <img src="splash.jpg27" alt="4.1角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
+    
 </div>
 
 <!-- 历史卡池 - 4.0 -->
@@ -6534,7 +6543,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">钟离</span> <span class="five-star">达达利亚</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">诺艾尔</span> <span class="four-star">早柚</span> <span class="four-star">菲米尼</span>
     </div>
-    <img src="splash.jpg28" alt="4.0角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
+
 </div>
 
 <!-- 历史卡池 - 3.8 -->
@@ -6547,7 +6556,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">珊瑚宫心海</span> <span class="five-star">流浪者</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">烟绯</span> <span class="four-star">罗莎莉亚</span> <span class="four-star">珐露珊</span>
     </div>
-    <img src="splash.jpg29" alt="3.8角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
+    
 </div>
 
 <!-- 历史卡池 - 3.7 -->
@@ -6560,7 +6569,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">艾尔海森</span> <span class="five-star">枫原万叶</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">香菱</span> <span class="four-star">鹿野院平藏</span> <span class="four-star">瑶瑶</span>
     </div>
-    <img src="splash.jpg30" alt="3.7角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
+  
 </div>
 
 <!-- 历史卡池 - 3.6 -->
@@ -6573,7 +6582,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">白术</span> <span class="five-star">甘雨</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">菲谢尔</span> <span class="four-star">坎蒂丝</span> <span class="four-star">卡维</span>
     </div>
-    <img src="splash.jpg31" alt="3.6角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
+    
 </div>
 
 <!-- 历史卡池 - 3.5 -->
@@ -6586,7 +6595,6 @@ body {
         <strong>下半五星：</strong> <span class="five-star">申鹤</span> <span class="five-star">神里绫华</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">米卡</span> <span class="four-star">迪奥娜</span> <span class="four-star">砂糖</span>
     </div>
-    <img src="splash.jpg32" alt="3.5角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
 </div>
 
 <!-- 历史卡池 - 3.4 -->
@@ -6599,7 +6607,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">胡桃</span> <span class="five-star">夜兰</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">北斗</span> <span class="four-star">凝光</span> <span class="four-star">行秋</span>
     </div>
-    <img src="splash.jpg33" alt="3.4角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
+    
 </div>
 
 <!-- 历史卡池 - 3.3 -->
@@ -6612,7 +6620,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">雷电将军</span> <span class="five-star">神里绫人</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">罗莎莉亚</span> <span class="four-star">早柚</span> <span class="four-star">九条裟罗</span>
     </div>
-    <img src="splash.jpg34" alt="3.3角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
+    
 </div>
 
 <!-- 历史卡池 - 3.2 -->
@@ -6625,7 +6633,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">八重神子</span> <span class="five-star">达达利亚</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">莱依拉</span> <span class="four-star">鹿野院平藏</span> <span class="four-star">托马</span>
     </div>
-    <img src="splash.jpg35" alt="3.2角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
+    
 </div>
 
 <!-- 历史卡池 - 3.1 -->
@@ -6638,7 +6646,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">妮露</span> <span class="five-star">阿贝多</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">芭芭拉</span> <span class="four-star">香菱</span> <span class="four-star">北斗</span>
     </div>
-    <img src="splash.jpg36" alt="3.1角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
+    
 </div>
 
 <!-- 历史卡池 - 3.0 -->
@@ -6651,7 +6659,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">甘雨</span> <span class="five-star">珊瑚宫心海</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">多莉</span> <span class="four-star">行秋</span> <span class="four-star">砂糖</span>
     </div>
-    <img src="splash.jpg37" alt="3.0角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
+    
 </div>
 
 <!-- 历史卡池 - 2.8 -->
@@ -6664,7 +6672,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">宵宫</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">云堇</span> <span class="four-star">辛焱</span> <span class="four-star">班尼特</span>
     </div>
-    <img src="splash.jpg38" alt="2.8角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
+ 
 </div>
 
 <!-- 历史卡池 - 2.7 -->
@@ -6677,7 +6685,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">荒泷一斗</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">久岐忍</span> <span class="four-star">重云</span> <span class="four-star">五郎</span>
     </div>
-    <img src="splash.jpg39" alt="2.7角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
+  
 </div>
 
 <!-- 历史卡池 - 2.6 -->
@@ -6690,7 +6698,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">神里绫华</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">罗莎莉亚</span> <span class="four-star">早柚</span> <span class="four-star">雷泽</span>
     </div>
-    <img src="splash.jpg40" alt="2.6角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
+  
 </div>
 
 <!-- 历史卡池 - 2.5 -->
@@ -6703,8 +6711,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">雷电将军</span> <span class="five-star">珊瑚宫心海</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">辛焱</span> <span class="four-star">班尼特</span> <span class="four-star">九条裟罗</span>
     </div>
-    <img src="splash.jpg41" alt="2.5角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
-</div>
+    </div>
 
 <!-- 历史卡池 - 2.4 -->
 <div class="cmd-card" style="background: #f9f0ff; border-left: 4px solid #722ed1;">
@@ -6716,8 +6723,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">钟离</span> <span class="five-star">甘雨</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">行秋</span> <span class="four-star">烟绯</span> <span class="four-star">北斗</span>
     </div>
-    <img src="splash.jpg42" alt="2.4角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
-</div>
+    </div>
 
 <!-- 历史卡池 - 2.3 -->
 <div class="cmd-card" style="background: #f9f0ff; border-left: 4px solid #722ed1;">
@@ -6729,7 +6735,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">荒泷一斗</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">芭芭拉</span> <span class="four-star">香菱</span> <span class="four-star">五郎</span>
     </div>
-    <img src="splash.jpg43" alt="2.3角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
+    
 </div>
 
 <!-- 历史卡池 - 2.2 -->
@@ -6742,8 +6748,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">胡桃</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">托马</span> <span class="four-star">迪奥娜</span> <span class="four-star">早柚</span>
     </div>
-    <img src="splash.jpg44" alt="2.2角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
-</div>
+    </div>
 
 <!-- 历史卡池 - 2.1 -->
 <div class="cmd-card" style="background: #f9f0ff; border-left: 4px solid #722ed1;">
@@ -6755,8 +6760,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">珊瑚宫心海</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">罗莎莉亚</span> <span class="four-star">行秋</span> <span class="four-star">北斗</span>
     </div>
-    <img src="splash.jpg45" alt="2.1角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
-</div>
+    </div>
 
 <!-- 历史卡池 - 2.0 -->
 <div class="cmd-card" style="background: #f9f0ff; border-left: 4px solid #722ed1;">
@@ -6768,8 +6772,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">宵宫</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">迪奥娜</span> <span class="four-star">辛焱</span> <span class="four-star">早柚</span>
     </div>
-    <img src="splash.jpg46" alt="2.0角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
-</div>
+   </div>
 
 <!-- 历史卡池 - 1.6 -->
 <div class="cmd-card" style="background: #f9f0ff; border-left: 4px solid #722ed1;">
@@ -6781,8 +6784,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">枫原万叶</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">罗莎莉亚</span> <span class="four-star">班尼特</span> <span class="four-star">雷泽</span>
     </div>
-    <img src="splash.jpg47" alt="1.6角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
-</div>
+    </div>
 
 <!-- 历史卡池 - 1.5 -->
 <div class="cmd-card" style="background: #f9f0ff; border-left: 4px solid #722ed1;">
@@ -6794,7 +6796,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">优菈</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">行秋</span> <span class="four-star">辛焱</span> <span class="four-star">北斗</span>
     </div>
-    <img src="splash.jpg48" alt="1.5角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
+    
 </div>
 
 <!-- 历史卡池 - 1.4 -->
@@ -6807,7 +6809,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">达达利亚</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">罗莎莉亚</span> <span class="four-star">芭芭拉</span> <span class="four-star">菲谢尔</span>
     </div>
-    <img src="splash.jpg49" alt="1.4角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
+   
 </div>
 
 <!-- 历史卡池 - 1.3（三个半区） -->
@@ -6822,7 +6824,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">胡桃</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">行秋</span> <span class="four-star">香菱</span> <span class="four-star">重云</span>
     </div>
-    <img src="splash.jpg50" alt="1.3角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
+   
 </div>
 
 <!-- 历史卡池 - 1.2 -->
@@ -6835,8 +6837,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">甘雨</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">行秋</span> <span class="four-star">香菱</span> <span class="four-star">诺艾尔</span>
     </div>
-    <img src="splash.jpg51" alt="1.2角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
-</div>
+    </div>
 
 <!-- 历史卡池 - 1.1 -->
 <div class="cmd-card" style="background: #f9f0ff; border-left: 4px solid #722ed1;">
@@ -6848,8 +6849,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">钟离</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">辛焱</span> <span class="four-star">雷泽</span> <span class="four-star">重云</span>
     </div>
-    <img src="splash.jpg52" alt="1.1角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
-</div>
+    </div>
 
 <!-- 历史卡池 - 1.0 -->
 <div class="cmd-card" style="background: #f9f0ff; border-left: 4px solid #722ed1;">
@@ -6861,8 +6861,7 @@ body {
         <strong>下半五星：</strong> <span class="five-star">可莉</span><br>
         <strong>四星陪跑：</strong> <span class="four-star">行秋</span> <span class="four-star">砂糖</span> <span class="four-star">诺艾尔</span>
     </div>
-    <img src="splash.jpg53" alt="1.0角色祈愿卡池" style="width: 100%; max-width: 1500px; height: auto; margin-top: 15px; border-radius: 8px;">
-</div>
+    </div>
             <!-- 此处可继续添加其他版本卡池内容，格式同上 -->
         </div>
     </div>
@@ -6984,12 +6983,974 @@ body {
         </div>
     </section>
 
-    <section id="loadTipSection" class="content-section">
-        <h2 class="section-title">加载提示</h2>
-        <div class="cmd-card">
-            <div class="cmd-desc">暂无相关指令，敬请期待</div>
-        </div>
-    </section>
+ 
+  <section id="loadTipSection" class="content-section">
+    <style>
+        .item-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 20px;
+            margin-top: 24px;
+            margin-bottom: 30px;
+        }
+        .item-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(0, 100, 255, 0.2);
+            border-radius: 28px;
+            padding: 18px 12px 12px;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            text-align: center;
+        }
+        .item-card:hover {
+            transform: translateY(-4px);
+            background: white;
+            border-color: #1677ff;
+            box-shadow: 0 10px 20px rgba(0, 100, 255, 0.12);
+        }
+        .item-name {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 10px;
+            line-height: 1.35;
+        }
+        .item-id {
+            font-family: monospace;
+            font-size: 13px;
+            color: #1677ff;
+            background: rgba(22, 119, 255, 0.08);
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 40px;
+        }
+        .boss-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+            padding-left: 16px;
+            position: relative;
+        }
+        .boss-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 2px;
+            bottom: 2px;
+            width: 5px;
+            background: linear-gradient(180deg, #1677ff, #6c5ce7);
+            border-radius: 3px;
+        }
+        .boss-note {
+            font-size: 0.85rem;
+            color: #4b5563;
+            margin: 8px 0 20px 0;
+            background: rgba(0, 100, 255, 0.04);
+            padding: 10px 16px;
+            border-radius: 28px;
+            display: inline-block;
+        }
+        .section-title {
+            font-size: 1.7rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            background: linear-gradient(120deg, #1677ff, #6c5ce7);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .sub-nav-bar {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(4px);
+            border-radius: 40px;
+            padding: 10px 16px;
+            margin-bottom: 24px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .sub-nav-btn {
+            padding: 6px 16px;
+            border-radius: 40px;
+            border: none;
+            background: rgba(0, 0, 0, 0.02);
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: #1e293b;
+        }
+        .sub-nav-btn.active {
+            background: linear-gradient(95deg, #1677ff, #6c5ce7);
+            color: white;
+            box-shadow: 0 2px 8px rgba(0,100,255,0.2);
+        }
+        .item-module {
+            display: block;
+        }
+/* 道具大全独立搜索框样式 */
+.item-search-results {
+    position: relative;
+    z-index: 100;
+}
+.search-result-item {
+    padding: 12px 16px;
+    border-bottom: 1px solid #f0f2f5;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.search-result-item:hover {
+    background: #f0f7ff;
+}
+.search-result-name {
+    font-weight: 600;
+    color: #1e293b;
+}
+.search-result-id {
+    font-size: 12px;
+    color: #1677ff;
+    background: rgba(22,119,255,0.08);
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 20px;
+    margin-left: 8px;
+}
+.search-result-module {
+    font-size: 11px;
+    color: #64748b;
+    margin-top: 4px;
+}
+.highlight {
+    background: #fff3b0;
+    border-radius: 4px;
+    padding: 0 2px;
+}
+    </style>
+
+    <h2 class="section-title">道具大全</h2>
+    <div class="boss-note">✨ 点击任意卡片即可复制指令：<code>/give [ID] x1</code></div>
+<!-- 道具大全独立搜索框 -->
+<div class="search-box-wrapper" style="margin-bottom: 20px;">
+    <div class="search-input-group" style="display: flex; gap: 8px; align-items: center; background: rgba(255,255,255,0.7); backdrop-filter: blur(4px); border-radius: 48px; padding: 4px 4px 4px 20px; border: 1px solid rgba(0,100,255,0.2);">
+        <input type="text" id="itemSearchInput" placeholder="🔍 搜索道具名称或ID..." style="flex: 1; background: transparent; border: none; outline: none; font-size: 14px; padding: 12px 0;">
+        <button id="itemSearchClear" style="background: none; border: none; font-size: 20px; cursor: pointer; color: #94a3b8; display: none; padding: 0 12px;">×</button>
+        <button id="itemSearchBtn" style="background: linear-gradient(95deg, #1677ff, #6c5ce7); border: none; border-radius: 40px; padding: 8px 20px; color: white; font-weight: 500; cursor: pointer;">搜索</button>
+    </div>
+    <div id="itemSearchResults" class="item-search-results" style="display: none; margin-top: 12px; background: white; border-radius: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); border: 1px solid #e2e8f0; max-height: 300px; overflow-y: auto;"></div>
+</div>
+
+    <div class="sub-nav-bar" id="itemCategoryNav">
+        <button class="sub-nav-btn active" data-target="virtualItemSection">🎮 虚拟道具</button>
+        <button class="sub-nav-btn" data-target="constellationMaterialSection">⭐ 命座材料</button>
+        <button class="sub-nav-btn" data-target="renameCardSection">📝 改名卡</button>
+        <button class="sub-nav-btn" data-target="characterSection">👥 角色</button>
+<button class="sub-nav-btn" data-target="upgradeItemSection">📦 升级道具</button>
+        <button class="sub-nav-btn" data-target="oculusSection">👁️ 神瞳</button>
+        <button class="sub-nav-btn" data-target="talentMaterialSection">📘 天赋材料</button>
+<button class="sub-nav-btn" data-target="consumableSection">💊 消耗品</button>
+<button class="sub-nav-btn" data-target="windGliderSection">🪶 风之翼</button>
+<button class="sub-nav-btn" data-target="buffSection">⚡ 增益Buff</button>
+<button class="sub-nav-btn" data-target="namecardSection">🪪 名片卡</button>
+<button class="sub-nav-btn" data-target="avatarFrameSection">🖼️ 头像框</button>
+<button class="sub-nav-btn" data-target="skinSection">👗 角色皮肤</button>
+<button class="sub-nav-btn" data-target="weaponSkinSection">⚔️ 武器幻化</button>
+    </div>
+
+    <!-- 虚拟道具模块 -->
+    <div id="virtualItemSection" class="item-module">
+        <div class="boss-title">🎮 虚拟道具</div>
+        <div class="item-grid" id="virtualItemGrid"></div>
+    </div>
+
+    <!-- 命座材料模块 -->
+    <div id="constellationMaterialSection" class="item-module" style="display: none;">
+        <div class="boss-title">⭐ 命座材料</div>
+        <div class="item-grid" id="constellationMaterialGrid"></div>
+    </div>
+
+    <!-- 改名卡模块 -->
+    <div id="renameCardSection" class="item-module" style="display: none;">
+        <div class="boss-title">📝 改名卡</div>
+        <div class="item-grid" id="renameCardGrid"></div>
+    </div>
+
+    <!-- 角色模块 -->
+    <div id="characterSection" class="item-module" style="display: none;">
+        <div class="boss-title">👥 角色</div>
+        <div class="item-grid" id="characterGrid"></div>
+    </div>
+<!-- 升级道具模块（经验书/锻造矿/命星/圣遗物瓶） -->
+    <div id="upgradeItemSection" class="item-module" style="display: none;">
+        <div class="boss-title">📦 升级道具</div>
+        <div class="item-grid" id="upgradeItemGrid"></div>
+    </div>
+
+    <!-- 神瞳模块 -->
+    <div id="oculusSection" class="item-module" style="display: none;">
+        <div class="boss-title">👁️ 神瞳</div>
+        <div class="item-grid" id="oculusGrid"></div>
+    </div>
+
+    <!-- 天赋材料模块 -->
+    <div id="talentMaterialSection" class="item-module" style="display: none;">
+        <div class="boss-title">📘 天赋材料</div>
+        <div class="item-grid" id="talentMaterialGrid"></div>
+    </div>
+<!-- 消耗品模块 -->
+<div id="consumableSection" class="item-module" style="display: none;">
+    <div class="boss-title">💊 消耗品</div>
+    <div class="item-grid" id="consumableGrid"></div>
+</div>
+
+<!-- 风之翼模块 -->
+<div id="windGliderSection" class="item-module" style="display: none;">
+    <div class="boss-title">🪶 风之翼</div>
+    <div class="item-grid" id="windGliderGrid"></div>
+</div>
+
+<!-- 增益Buff模块 -->
+<div id="buffSection" class="item-module" style="display: none;">
+    <div class="boss-title">⚡ 增益Buff</div>
+    <div class="item-grid" id="buffGrid"></div>
+</div>
+
+<!-- 名片卡模块 -->
+<div id="namecardSection" class="item-module" style="display: none;">
+    <div class="boss-title">🪪 名片卡</div>
+    <div class="item-grid" id="namecardGrid"></div>
+</div>
+
+<!-- 头像框模块 -->
+<div id="avatarFrameSection" class="item-module" style="display: none;">
+    <div class="boss-title">🖼️ 头像框</div>
+    <div class="item-grid" id="avatarFrameGrid"></div>
+</div>
+
+<!-- 角色皮肤模块 -->
+<div id="skinSection" class="item-module" style="display: none;">
+    <div class="boss-title">👗 角色皮肤</div>
+    <div class="item-grid" id="skinGrid"></div>
+</div>
+
+<!-- 武器幻化模块 -->
+<div id="weaponSkinSection" class="item-module" style="display: none;">
+    <div class="boss-title">⚔️ 武器幻化</div>
+    <div class="item-grid" id="weaponSkinGrid"></div>
+</div>
+    <script>
+        // 虚拟道具数据
+        const virtualItems = [
+            [101,"角色经验"],[102,"冒险阅历"],[105,"好感经验"],[106,"原粹树脂"],
+            [107,"传说钥匙"],[108,"(test)天体推演"],[109,"熄星能量"],[110,"熄星精粹"],
+            [111,"微光精粹"],[112,"温暖精粹"],[113,"奇迹精粹"],[114,"铁钱"],
+            [115,"平安玉符"],[116,"节庆热度"],[117,"奇术符"],[118,"庆典巡回券"],
+            [119,"奇趣协力券"],[120,"纯水真心"],[121,"信任值"],[122,"碎果数据"],
+            [123,"迷踪币"],[124,"亮闪闪的漂流物"],[125,"迷你「羽球」"],[126,"神秘齿轮"],
+            [127,"鸣雷霰子"],[128,"鸣雷纯晶"],[129,"弈棋术经验"],[130,"灵妙玉符"],
+            [131,"逐月节节庆热度"],[132,"残悴之式札"],[133,"虚损之拓本"],[134,"朽裂之庚牌"],
+            [135,"踏雪章"],[136,"克险章"],[137,"逢福玉符"],[138,"完璧玉符"],
+            [139,"降魔玉符"],[140,"幽蕴砺石"],[141,"花簇簇的漂流物"],[142,"战策碎珀"],
+            [143,"巧思手记"],[144,"随想草稿"],[145,"古铁钱"],[146,"牌手经验"],
+            [147,"节庆热度"],[148,"营业收入"],[149,"可用资金"],[150,"巧策灵感"],
+            [151,"蘑菇宝钱"],[152,"灵蕈奖章"],[153,"绮碎斑晶"],[155,"试胆会的票券"],
+            [156,"节庆热度"],[157,"逐花券"],[158,"游乐会热度"],[159,"庆典券"],
+            [160,"妙骰券"],[161,"欢兴礼券"],[162,"趣意斑晶"],[163,"秘铜发条"],
+            [164,"诗歌会热度"],[165,"(test)勤务点"],[166,"「特尔克西徽章」"],[167,"剧戏票券"],
+            [168,"古铁钱"],[169,"节庆热度"],[170,"逸趣映片"],[171,"资金"],
+            [172,"「虹色巡回券」"],[173,"分析进度"],[174,"悠乐片段"],[175,"游迹钥匙"],
+            [176,"星游币"],[177,"形彩思绪"],[178,"庆典热度"],[179,"焚香晶灰"],
+            [180,"节庆热度"],[181,"游艺印章"],[182,"欢乐零食"],[183,"资金"],
+            [184,"行动点"],[185,"推想记录"],[186,"绘夏热度"],[187,"军团士气"],
+            [188,"完备进度"],[189,"炽魂豪气"],[190,"吉语钱"],[191,"风境风采"],
+            [192,"游赏见闻"],[193,"珍赏见闻"],[194,"联展热度"],[201,"原石"],
+            [202,"摩拉"],[203,"创世结晶"],[204,"洞天宝钱"],[205,"幸运牌币（废弃）"],
+            [206,"玩具勋章"],[207,"千音币"],[231,"事象凝核"],[232,"绮刻之楔"],
+            [233,"重现晶簇"],[234,"刻印片形"],[235,"盛会之匙"],[236,"明刻之楔"],
+            [238,"奇域经验"],[241,"奇丽凝晶"],[242,"奇丽凝晶"],[243,"奇丽凝晶"],
+            [315,"声望经验·蒙德"],[317,"声望经验·璃月"],[314,"声望经验·稻妻"],
+            [316,"声望经验·须弥"],[318,"声望经验·枫丹"],[319,"声望经验·「悬木人」"],
+            [320,"声望经验·「流泉之众」"],[321,"声望经验·「回声之子」"],
+            [322,"声望经验·「花羽会」"],[323,"声望经验·「烟谜主」"],
+            [324,"声望经验·「沃陆之邦」"]
+        ];
+
+        // 命座材料数据
+        const constellationItems = [
+            [911,"恒常燃烧的记忆"],[912,"奔流不息的记忆"],[913,"草木繁茂的记忆"],
+            [914,"苍雷紫电的记忆"],[915,"四方之风的记忆"],[916,"至冬极寒的记忆"],
+            [917,"不动晶石的记忆"],[918,"灼燃的燧原矿"],[1102,"神里绫华的命星"],
+            [1103,"琴的命星"],[1105,"旅行者（男）的命星"],[1106,"丽莎的命星"],
+            [1107,"旅行者（女）的命星"],[1114,"芭芭拉的命星"],[1115,"凯亚的命星"],
+            [1116,"迪卢克的命星"],[1120,"雷泽的命星"],[1121,"安柏的命星"],
+            [1122,"温迪的命星"],[1123,"香菱的命星"],[1124,"北斗的命星"],
+            [1125,"行秋的命星"],[1126,"魈的命星"],[1127,"凝光的命星"],
+            [1129,"可莉的命星"],[1130,"钟离的命星"],[1131,"菲谢尔的命星"],
+            [1132,"班尼特的命星"],[1133,"达达利亚的命星"],[1134,"诺艾尔的命星"],
+            [1135,"七七的命星"],[1136,"重云的命星"],[1137,"甘雨的命星"],
+            [1138,"阿贝多的命星"],[1139,"迪奥娜的命星"],[1141,"莫娜的命星"],
+            [1142,"刻晴的命星"],[1143,"砂糖的命星"],[1144,"辛焱的命星"],
+            [1145,"罗莎莉亚的命星"],[1146,"胡桃的命星"],[1147,"枫原万叶的命星"],
+            [1148,"烟绯的命星"],[1149,"宵宫的命星"],[1150,"托马的命星"],
+            [1151,"优菈的命星"],[1152,"雷电将军的命星"],[1153,"早柚的命星"],
+            [1154,"珊瑚宫心海的命星"],[1155,"五郎的命星"],[1156,"九条裟罗的命星"],
+            [1157,"荒泷一斗的命星"],[1158,"八重神子的命星"],[1159,"鹿野院平藏的命星"],
+            [1160,"夜兰的命星"],[1162,"埃洛伊的命星"],[1163,"申鹤的命星"],
+            [1164,"云堇的命星"],[1165,"久岐忍的命星"],[1166,"神里绫人的命星"],
+            [1167,"柯莱的命星"],[1168,"多莉的命星"],[1169,"提纳里的命星"],
+            [1170,"妮露的命星"],[1171,"赛诺的命星"],[1172,"坎蒂丝的命星"],
+            [1173,"纳西妲的命星"],[1174,"莱依拉的命星"],[1175,"流浪者的命星"],
+            [1177,"瑶瑶的命星"],[1178,"艾尔海森的命星"],[1179,"迪希雅的命星"],
+            [1180,"米卡的命星"],[1181,"卡维的命星"],[1182,"白术的命星"],
+            [1176,"珐露珊的命星"],[1161,"绮良良的命星"],[1183,"琳妮特的命星"],
+            [1184,"林尼的命星"],[1185,"菲米尼的命星"],[1186,"莱欧斯利的命星"],
+            [1187,"那维莱特的命星"],[1188,"夏洛蒂的命星"],[1189,"芙宁娜的命星"],
+            [1190,"夏沃蕾的命星"],[1191,"娜维娅的命星"],[1192,"嘉明的命星"],
+            [1193,"闲云的命星"],[1194,"千织的命星"],[1195,"希格雯的命星"],
+            [1196,"阿蕾奇诺的命星"],[1197,"赛索斯的命星"],[1198,"克洛琳德的命星"],
+            [1199,"艾梅莉埃的命星"],[5100,"卡齐娜的命星"],[5101,"基尼奇的命星"],
+            [5102,"玛拉妮的命星"],[5103,"希诺宁的命星"],[5104,"恰斯卡的命星"],
+            [5105,"欧洛伦的命星"],[5106,"玛薇卡的命星"],[5107,"茜特菈莉的命星"],
+            [5108,"蓝砚的命星"],[5109,"梦见月瑞希的命星"],[5110,"伊安珊的命星"],
+            [5111,"瓦雷莎的命星"],[5112,"爱可菲的命星"],[5113,"伊法的命星"],
+            [5114,"丝柯克的命星"],[5115,"塔利雅的命星"],[5116,"伊涅芙的命星"],
+            [5119,"菈乌玛的命星"],[5120,"菲林斯的命星"],[5121,"爱诺的命星"],
+            [5122,"奈芙尔的命星"],[5123,"杜林的命星"],[5124,"雅珂达的命星"],
+            [5125,"哥伦比娅的命星"],[5126,"兹白的命星"],[5127,"叶洛亚的命星"],
+            [5128,"法尔伽的命星"],[5130,"莉奈娅的命星"]
+        ];
+
+        // 改名卡数据
+        const renameCardItems = [
+            [1301, "新名撰聿"],
+            [1302, "重立名约之契"],
+            [1303, "覆写秘钥·其左"],
+            [1304, "覆写秘钥·其右"]
+        ];
+
+        // 角色数据
+        const characterItems = [
+            [1002,"神里绫华"],[1003,"琴"],[1005,"男主"],[1006,"丽莎"],
+            [1007,"女主"],[1014,"芭芭拉"],[1015,"凯亚"],[1016,"迪卢克"],
+            [1020,"雷泽"],[1021,"安柏"],[1022,"温迪"],[1023,"香菱"],
+            [1024,"北斗"],[1025,"行秋"],[1026,"魈"],[1027,"凝光"],
+            [1029,"可莉"],[1030,"钟离"],[1031,"菲谢尔"],[1032,"班尼特"],
+            [1033,"达达利亚"],[1034,"诺艾尔"],[1035,"七七"],[1036,"重云"],
+            [1037,"甘雨"],[1038,"阿贝多"],[1039,"迪奥娜"],[1041,"莫娜"],
+            [1042,"刻晴"],[1043,"砂糖"],[1044,"辛焱"],[1045,"罗莎莉亚"],
+            [1046,"胡桃"],[1047,"枫原万叶"],[1048,"烟绯"],[1049,"宵宫"],
+            [1050,"托马"],[1051,"优菈"],[1052,"雷电将军"],[1053,"早柚"],
+            [1054,"珊瑚宫心海"],[1055,"五郎"],[1056,"九条裟罗"],[1057,"荒泷一斗"],
+            [1058,"八重神子"],[1059,"鹿野院平藏"],[1060,"夜兰"],[1062,"埃洛伊"],
+            [1063,"申鹤"],[1064,"云堇"],[1065,"久岐忍"],[1066,"神里绫人"],
+            [1067,"柯莱"],[1068,"多莉"],[1069,"提纳里"],[1070,"妮露"],
+            [1071,"赛诺"],[1072,"坎蒂丝"],[1073,"纳西妲"],[1074,"莱依拉"],
+            [1075,"流浪者"],[1077,"瑶瑶"],[1078,"艾尔海森"],[1079,"迪希雅"],
+            [1080,"米卡"],[1081,"卡维"],[1082,"白术"],[1076,"珐露珊"],
+            [1061,"绮良良"],[1083,"琳妮特"],[1084,"林尼"],[1085,"菲米尼"],
+            [1086,"莱欧斯利"],[1087,"那维莱特"],[1088,"夏洛蒂"],[1089,"芙宁娜"],
+            [1090,"夏沃蕾"],[1091,"娜维娅"],[1092,"嘉明"],[1093,"闲云"],
+            [1094,"千织"],[1095,"希格雯"],[1097,"赛索斯"],[1096,"阿蕾奇诺"],
+            [1098,"克洛琳德"],[1099,"艾梅莉埃"],[4100,"卡齐娜"],[4101,"基尼奇"],
+            [4102,"玛拉妮"],[4103,"希诺宁"],[4104,"恰斯卡"],[4105,"欧洛伦"],
+            [4106,"玛薇卡"],[4107,"茜特菈莉"],[4108,"蓝砚"],[4109,"梦见月瑞希"],
+            [4110,"伊安珊"],[4111,"瓦雷莎"],[4112,"爱可菲"],[4113,"伊法"],
+            [4114,"丝柯克"],[4115,"塔利雅"],[4116,"伊涅芙"],[4119,"菈乌玛"],
+            [4120,"菲林斯"],[4121,"爱诺"],[4122,"奈芙尔"],[4123,"杜林"],
+            [4124,"雅珂达"],[4125,"哥伦比娅"],[4126,"兹白"],[4127,"叶洛亚"],
+            [4128,"法尔伽"],[4130,"莉奈娅"]
+        ];
+// 升级道具数据
+        const upgradeItems = [
+            // 经验书
+            [104001,"流浪者的经验"],[104002,"冒险家的经验"],[104003,"大英雄的经验"],
+            // 武器锻造矿
+            [104011,"精锻用杂矿"],[104012,"精锻用良矿"],[104013,"精锻用魔矿"],
+            // 100级突破
+            [104300,"无主的命星"],
+            // 圣遗物经验瓶
+            [105001,"（废弃）祝圣之滴"],[105002,"祝圣油膏"],[105003,"祝圣精华"],[105004,"（废弃）祝圣之精华"]
+        ];
+
+        // 神瞳数据
+        const oculusItems = [
+            [101644,"流明石原矿"],[107001,"散失的风神瞳"],[107003,"散失的岩神瞳"],
+            [107010,"绯红玉髓"],[107011,"绯红玉髓（纯表现）"],[107014,"散失的雷神瞳"],
+            [107015,"逐月符"],[107016,"流明晶石"],[107017,"散失的草神瞳"],
+            [107023,"散失的水神瞳"],[107026,"苍灵鲤"],[107028,"散失的火神瞳"],
+            [107030,"散失的月神瞳"]
+        ];
+
+        // 天赋材料数据（包含所有元素宝石、天赋书、怪物掉落、周本材料、武器突破材料）
+        const talentItems = [
+            // 元素宝石系列
+            [104101,"璀璨原钻碎屑"],[104102,"璀璨原钻断片"],[104103,"璀璨原钻块"],[104104,"璀璨原钻"],
+            [104111,"燃愿玛瑙碎屑"],[104112,"燃愿玛瑙断片"],[104113,"燃愿玛瑙块"],[104114,"燃愿玛瑙"],
+            [104121,"涤净青金碎屑"],[104122,"涤净青金断片"],[104123,"涤净青金块"],[104124,"涤净青金"],
+            [104131,"生长碧翡碎屑"],[104132,"生长碧翡断片"],[104133,"生长碧翡块"],[104134,"生长碧翡"],
+            [104141,"最胜紫晶碎屑"],[104142,"最胜紫晶断片"],[104143,"最胜紫晶块"],[104144,"最胜紫晶"],
+            [104151,"自在松石碎屑"],[104152,"自在松石断片"],[104153,"自在松石块"],[104154,"自在松石"],
+            [104161,"哀叙冰玉碎屑"],[104162,"哀叙冰玉断片"],[104163,"哀叙冰玉块"],[104164,"哀叙冰玉"],
+            [104171,"坚牢黄玉碎屑"],[104172,"坚牢黄玉断片"],[104173,"坚牢黄玉块"],[104174,"坚牢黄玉"],
+            // 天赋书系列
+            [104301,"「自由」的教导"],[104302,"「自由」的指引"],[104303,"「自由」的哲学"],
+            [104304,"「抗争」的教导"],[104305,"「抗争」的指引"],[104306,"「抗争」的哲学"],
+            [104307,"「诗文」的教导"],[104308,"「诗文」的指引"],[104309,"「诗文」的哲学"],
+            [104310,"「繁荣」的教导"],[104311,"「繁荣」的指引"],[104312,"「繁荣」的哲学"],
+            [104313,"「勤劳」的教导"],[104314,"「勤劳」的指引"],[104315,"「勤劳」的哲学"],
+            [104316,"「黄金」的教导"],[104317,"「黄金」的指引"],[104318,"「黄金」的哲学"],
+            [104319,"智识之冕"],
+            [104320,"「浮世」的教导"],[104321,"「浮世」的指引"],[104322,"「浮世」的哲学"],
+            [104323,"「风雅」的教导"],[104324,"「风雅」的指引"],[104325,"「风雅」的哲学"],
+            [104326,"「天光」的教导"],[104327,"「天光」的指引"],[104328,"「天光」的哲学"],
+            [104329,"「诤言」的教导"],[104330,"「诤言」的指引"],[104331,"「诤言」的哲学"],
+            [104332,"「巧思」的教导"],[104333,"「巧思」的指引"],[104334,"「巧思」的哲学"],
+            [104335,"「笃行」的教导"],[104336,"「笃行」的指引"],[104337,"「笃行」的哲学"],
+            [104338,"「公平」的教导"],[104339,"「公平」的指引"],[104340,"「公平」的哲学"],
+            [104341,"「正义」的教导"],[104342,"「正义」的指引"],[104343,"「正义」的哲学"],
+            [104344,"「秩序」的教导"],[104345,"「秩序」的指引"],[104346,"「秩序」的哲学"],
+            [104347,"「角逐」的教导"],[104348,"「角逐」的指引"],[104349,"「角逐」的哲学"],
+            [104350,"「焚燔」的教导"],[104351,"「焚燔」的指引"],[104352,"「焚燔」的哲学"],
+            [104353,"「纷争」的教导"],[104354,"「纷争」的指引"],[104355,"「纷争」的哲学"],
+            [104356,"「月光」的教导"],[104357,"「月光」的指引"],[104358,"「月光」的哲学"],
+            [104359,"「乐园」的教导"],[104360,"「乐园」的指引"],[104361,"「乐园」的哲学"],
+            [104362,"「浪迹」的教导"],[104363,"「浪迹」的指引"],[104364,"「浪迹」的哲学"],
+            // 怪物掉落材料
+            [112001,"原质"],[112002,"史莱姆凝液"],[112003,"史莱姆清"],[112004,"史莱姆原浆"],
+            [112005,"破损的面具"],[112006,"污秽的面具"],[112007,"不祥的面具"],
+            [112008,"导能绘卷"],[112009,"封魔绘卷"],[112010,"禁咒绘卷"],
+            [112011,"牢固的箭簇"],[112012,"锐利的箭簇"],[112013,"历战的箭簇"],
+            [112014,"沉重号角"],[112015,"黑铜号角"],[112016,"黑晶号角"],
+            [112017,"晦暗刻像"],[112018,"夤夜刻像"],[112019,"幽邃刻像"],
+            [112020,"地脉的旧枝"],[112021,"地脉的枯叶"],[112022,"地脉的新芽"],
+            [112023,"混沌装置"],[112024,"混沌回路"],[112025,"混沌炉心"],
+            [112026,"雾虚花粉"],[112027,"雾虚草囊"],[112028,"雾虚灯芯"],
+            [112029,"猎兵祭刀"],[112030,"特工祭刀"],[112031,"督察长祭刀"],
+            [112032,"新兵的徽记"],[112033,"士官的徽记"],[112034,"尉官的徽记"],
+            [112035,"寻宝鸦印"],[112036,"藏银鸦印"],[112037,"攫金鸦印"],
+            [112038,"骗骗花蜜"],[112039,"微光花蜜"],[112040,"原素花蜜"],
+            [112041,"脆弱的骨片"],[112042,"结实的骨片"],[112043,"石化的骨片"],
+            [112044,"破旧的刀镡"],[112045,"影打刀镡"],[112046,"名刀镡"],
+            [112047,"混沌机关"],[112048,"混沌枢纽"],[112049,"混沌真眼"],
+            [112050,"黯淡棱镜"],[112051,"水晶棱镜"],[112052,"偏光棱镜"],
+            [112053,"浮游干核"],[112054,"浮游幽核"],[112055,"浮游晶化核"],
+            [112056,"隐兽指爪"],[112057,"隐兽利爪"],[112058,"隐兽鬼爪"],
+            [112059,"蕈兽孢子"],[112060,"荧光孢粉"],[112061,"孢囊晶尘"],
+            [112062,"失活菌核"],[112063,"休眠菌核"],[112064,"茁壮菌核"],
+            [112065,"褪色红绸"],[112066,"镶边红绸"],[112067,"织金红绸"],
+            [112068,"混沌容器"],[112069,"混沌模块"],[112070,"混沌锚栓"],
+            [112071,"破缺棱晶"],[112072,"混浊棱晶"],[112073,"辉光棱晶"],
+            [112074,"残毁的横脊"],[112075,"密固的横脊"],[112076,"锲纹的横脊"],
+            [112077,"来自何处的待放之花"],[112078,"何人所珍藏之花"],[112079,"漫游者的盛放之花"],
+            [112080,"异海凝珠"],[112081,"异海之块"],[112082,"异色结晶石"],
+            [112083,"啮合齿轮"],[112084,"机关正齿轮"],[112085,"奇械机芯齿轮"],
+            [112086,"浊水的一滴"],[112087,"浊水的一掬"],[112088,"初生的浊水幻灵"],
+            [112089,"隙间之核"],[112090,"外世突触"],[112091,"异界生命核"],
+            [112092,"老旧的役人怀表"],[112093,"役人的制式怀表"],[112094,"役人的时时刻刻"],
+            [112095,"羽状鳍翅"],[112096,"月色鳍翅"],[112097,"渊光鳍翅"],
+            [112098,"残毁的剑柄"],[112099,"裂断的剑柄"],[112100,"未熄的剑柄"],
+            [112101,"稚嫩的尖齿"],[112102,"老练的坚齿"],[112103,"横行霸者的利齿"],
+            [112104,"卫从的木哨"],[112105,"战士的铁哨"],[112106,"龙冠武士的金哨"],
+            [112107,"意志破碎的残片"],[112108,"意志明晰的寄偶"],[112109,"意志巡游的符像"],
+            [112110,"聚燃的石块"],[112111,"聚燃的命种"],[112112,"聚燃的游像眼"],
+            [112113,"秘源轴"],[112114,"秘源机鞘"],[112115,"秘源真芯"],
+            [112116,"折光的胚芽"],[112117,"惑光的阔叶"],[112118,"迷光的蜷叶之心"],
+            [112119,"冷裂壳块"],[112120,"蕴热的背壳"],[112121,"明燃的棱状壳"],
+            [112122,"毁损机轴"],[112123,"加固机轴"],[112124,"精制机轴"],
+            [112125,"磨损的执凭"],[112126,"精致的执凭"],[112127,"霜镌的执凭"],
+            [112128,"霜夜的残照"],[112129,"霜夜的柔辉"],[112130,"霜夜的煌荣"],
+            [112131,"失光块骨"],[112132,"稀光遗骼"],[112133,"繁光躯外骸"],
+            [112134,"幽雾化形"],[112135,"幽雾片甲"],[112136,"幽雾兜盔"],
+            [112137,"深黯的裂眼"],[112138,"深黯的怪核"],[112139,"深黯的钩喙"],
+            [112140,"失色的焰剑"],[112141,"残失的焰剑"],[112142,"宝饰的焰剑"],
+            // 周本Boss材料
+            [113001,"飓风之种"],[113002,"雷光棱镜"],[113003,"东风之翎"],[113004,"东风之爪"],
+            [113005,"东风的吐息"],[113006,"北风之尾"],[113007,"北风之环"],[113008,"北风的魂匣"],
+            [113009,"玄岩之塔"],[113010,"极寒之核"],[113011,"常燃火种"],[113012,"净水之心"],
+            [113013,"吞天之鲸·只角"],[113014,"魔王之刃·残片"],[113015,"武炼之魂·孤影"],
+            [113016,"未熟之玉"],[113017,"龙王之冕"],[113018,"血玉之枝"],[113019,"鎏金之鳞"],
+            [113020,"晶凝之华"],[113022,"魔偶机心"],[113023,"恒常机关之心"],[113024,"阴燃之珠"],
+            [113025,"熔毁之刻"],[113026,"狱火之蝶"],[113027,"灰烬之心"],[113028,"排异之露"],
+            [113029,"雷霆数珠"],[113030,"兽境王器"],[113031,"龙嗣伪鳍"],[113032,"凶将之手眼"],
+            [113033,"祸神之禊泪"],[113034,"万劫之真意"],[113035,"符纹之齿"],[113036,"蕈王钩喙"],
+            [113037,"藏雷野实"],[113038,"永续机芯"],[113039,"导光四面体"],[113040,"灭诤草蔓"],
+            [113041,"傀儡的悬丝"],[113042,"无心的渊镜"],[113043,"空行的虚铃"],[113044,"苍砾蕊羽"],
+            [113045,"常暗圆环"],[113046,"生长天地之蕨草"],[113047,"原初绿洲之初绽"],[113048,"亘古树海之一瞬"],
+            [113049,"奇械发条备件·歌裴莉娅"],[113050,"奇械发条备件·科培琉司"],[113051,"帝皇的决断"],
+            [113052,"「图比昂装置」"],[113053,"原海麟角"],[113054,"无光丝线"],[113055,"无光涡眼"],
+            [113056,"无光质块"],[113057,"未能达成超越之水"],[113058,"凝云鳞甲"],[113059,"金色旋律的断章"],
+            [113060,"残火灯烛"],[113061,"丝织之羽"],[113062,"否定裁断"],[113063,"星与火的基石"],
+            [113064,"受祝所缚之印"],[113065,"过熟的火榴果"],[113066,"秘刻金纹的源核"],[113067,"深邃纠缠的凝视"],
+            [113068,"蚀灭的灵犀"],[113069,"蚀灭的阳焰"],[113070,"蚀灭的鳞羽"],[113071,"谜土的护符"],
+            [113072,"龙像的无智核"],[113073,"升扬样本·骑士"],[113074,"升扬样本·战车"],[113075,"升扬样本·王族"],
+            [113076,"秘源积气喉"],[113077,"精密型月矩力冲鸭模具"],[113078,"承光的鳞羽"],[113079,"漫光的辉角"],
+            [113080,"循环式军用月矩核心"],[113081,"贤医的假面"],[113082,"狂人的约束"],[113083,"异端的瓶剂"],
+            [113084,"魇翼枯骸"],[113085,"棱光的断尾"],[113086,"堕天的落羽"],
+            // 武器突破材料系列
+            [114001,"高塔孤王的破瓦"],[114002,"高塔孤王的残垣"],[114003,"高塔孤王的断片"],[114004,"高塔孤王的碎梦"],
+            [114005,"凛风奔狼的始龀"],[114006,"凛风奔狼的裂齿"],[114007,"凛风奔狼的断牙"],[114008,"凛风奔狼的怀乡"],
+            [114009,"狮牙斗士的枷锁"],[114010,"狮牙斗士的铁链"],[114011,"狮牙斗士的镣铐"],[114012,"狮牙斗士的理想"],
+            [114013,"孤云寒林的光砂"],[114014,"孤云寒林的辉岩"],[114015,"孤云寒林的圣骸"],[114016,"孤云寒林的神体"],
+            [114017,"雾海云间的铅丹"],[114018,"雾海云间的汞丹"],[114019,"雾海云间的金丹"],[114020,"雾海云间的转还"],
+            [114021,"漆黑陨铁的一粒"],[114022,"漆黑陨铁的一片"],[114023,"漆黑陨铁的一角"],[114024,"漆黑陨铁的一块"],
+            [114025,"远海夷地的瑚枝"],[114026,"远海夷地的玉枝"],[114027,"远海夷地的琼枝"],[114028,"远海夷地的金枝"],
+            [114029,"鸣神御灵的明惠"],[114030,"鸣神御灵的欢喜"],[114031,"鸣神御灵的亲爱"],[114032,"鸣神御灵的勇武"],
+            [114033,"今昔剧画之恶尉"],[114034,"今昔剧画之虎啮"],[114035,"今昔剧画之一角"],[114036,"今昔剧画之鬼人"],
+            [114037,"谧林涓露的铜符"],[114038,"谧林涓露的铁符"],[114039,"谧林涓露的银符"],[114040,"谧林涓露的金符"],
+            [114041,"绿洲花园的追忆"],[114042,"绿洲花园的恩惠"],[114043,"绿洲花园的哀思"],[114044,"绿洲花园的真谛"],
+            [114045,"烈日威权的残响"],[114046,"烈日威权的余光"],[114047,"烈日威权的梦想"],[114048,"烈日威权的旧日"],
+            [114049,"悠古弦音的残章"],[114050,"悠古弦音的断章"],[114051,"悠古弦音的乐章"],[114052,"悠古弦音的回响"],
+            [114053,"纯圣露滴的滤渣"],[114054,"纯圣露滴的凝华"],[114055,"纯圣露滴的醴泉"],[114056,"纯圣露滴的真粹"],
+            [114057,"无垢之海的苦盏"],[114058,"无垢之海的酒盏"],[114059,"无垢之海的银杯"],[114060,"无垢之海的金杯"],
+            [114061,"贡祭炽心的惶恐"],[114062,"贡祭炽心的踌躇"],[114063,"贡祭炽心的决绝"],[114064,"贡祭炽心的荣膺"],
+            [114065,"谵妄圣主的朽败"],[114066,"谵妄圣主的余哀"],[114067,"谵妄圣主的容光"],[114068,"谵妄圣主的神面"],
+            [114069,"神合秘烟的思绪"],[114070,"神合秘烟的预感"],[114071,"神合秘烟的征兆"],[114072,"神合秘烟的启示"],
+            [114073,"奇巧秘器的残件"],[114074,"奇巧秘器的模本"],[114075,"奇巧秘器的继业"],[114076,"奇巧秘器的真愿"],
+            [114077,"长夜燧火的余烬"],[114078,"长夜燧火的残照"],[114079,"长夜燧火的明焰"],[114080,"长夜燧火的烈辉"],
+            [114081,"终北遗嗣的哀荣"],[114082,"终北遗嗣的迷顽"],[114083,"终北遗嗣的祷献"],[114084,"终北遗嗣的煌熠"],
+            // 活动/特殊材料
+            [200103,"腐殖龙髓"],[200104,"「看得见的风」"],[200105,"「童真的断篇」"],[200106,"海皇香脂"],
+            [200107,"赤穗酒枡"],[200108,"「溶媒」"],[200109,"明目之油膏"],[200110,"霞色宝珠"],
+            [200111,"原海鱼油"],[200112,"迁风的苍翎"],[200113,"若狭的藁末"],[200114,"「不凋的绢华」"],
+            [200115,"凝恒的脂蜡"],[200116,"马腾斯万能护养剂"],[200117,"蒲公英书签"],[200118,"涌现的圣杯"],
+            [200119,"「超级无敌闪亮亮魔晶」"],[200120,"「大地之王」"],[200121,"衡仪机枢"],[200122,"「凝静的海色」"],
+            [200123,"纺灵之梭"],[200124,"灼幽的磷焰"],[200125,"强弓校调工具组"],[200126,"漫行者的晶髓"],
+            [200127,"金色弦丝"],[200128,"练心"]
+        ];
+// 消耗品数据
+const consumableItems = [
+    [210,"原粹精珀（废弃）"],[211,"原粹树脂（废弃）"],[221,"无主的星辉"],[222,"无主的星尘"],
+    [223,"纠缠之缘"],[224,"相遇之缘"],[239,"纪游经验"],[240,"诸界纪游"],
+    [301,"火之印"],[302,"水之印"],[303,"草之印"],[304,"雷之印"],[305,"风之印"],[306,"冰之印"],[307,"岩之印"],[308,"月之印"],
+    [1201,"珍珠纪行·初稿"],[1202,"空月祝福·新月"],
+    [101005,"深赤之石"],[101007,"深赤之石"],[100225,"狩猎陷阱"],[100865,"附有记忆的面具（废弃）"],
+    [100934,"键纹"],[100935,"键纹"],[100936,"键纹"],[100937,"键纹"],[100938,"键纹"],
+    [101692,"光界之印"],[101693,"光界之核"],[101713,"（test）光能球"],[101714,"香气四溢的调料"],
+    [104201,"嬗变之尘"],[105005,"祝圣之霜"],[105006,"启圣之尘"],
+    [120858,"明黄曜石断片"],[120859,"明黄曜石环"],[120912,"翠青曜石断片"],[120913,"翠青曜石环"],
+    [120914,"湛蓝曜石断片"],[120915,"湛蓝曜石环"],[121103,"幽紫曜石断片"],[121104,"幽紫曜石环"],
+    [121105,"灼赤曜石断片"],[121106,"灼赤曜石环"],[121107,"青绛曜石断片"],[121108,"青绛曜石环"],
+    [121283,"恒月印磐"],[121284,"恒月印磐"],[121285,"恒月印磐"],[121450,"虹月印磐"],[121451,"虹月印磐"],[121452,"虹月印磐"],
+    [121601,"古蒙德宗室之印"],[121602,"切片辖域管控模块·零质点"],
+    [106000,"测试用体力成长道具"],[106001,"测试用体力临时增长道具"],[107002,"元素晶尘"],
+    [107006,"蒙德地灵龛之钥"],[107007,"璃月地灵龛之钥"],[107008,"稻妻地灵龛之钥"],[107013,"仙速瓶"],
+    [107018,"须弥地灵龛之钥"],[107020,"对局邀请函"],[107021,"幸运牌币"],[107022,"净光翎"],
+    [107024,"礼券秘盒"],[107025,"枫丹地灵龛之钥"],[107027,"纳塔地灵龛之钥"],[107029,"欢声飞羽"],
+    [107031,"边域地灵龛之钥"],[107033,"技艺团块"],[107034,"摹忆因子"]
+];
+
+// 风之翼数据
+const windGliderItems = [
+    [140001,"初始之翼"],[140002,"守候之翼"],[140003,"降临之翼"],[140004,"苍天清风之翼"],
+    [140005,"金琮天行之翼"],[140006,"雪隐之翼"],[140007,"飨宴之翼"],[140008,"雷腾云奔之翼"],
+    [140009,"星汉灿烂之翼"],[140010,"森郁花繁之翼"],[140011,"星筵之翼"],[140012,"慈水怒涛之翼"],
+    [140013,"梦生须臾之翼"],[140014,"肴馔之翼"],[140015,"烈火腾燎之翼"],[140016,"命轨爻错之翼"],
+    [140017,"夜驻月停之翼"],[140018,"暇生一聚之翼"]
+];
+
+// 增益Buff数据
+const buffItems = [
+    [200201,"鹰隼之舞"],[200202,"铁翼"],[200203,"风之泉"],[200204,"沉重"],[200205,"猎手之舞"],
+    [200206,"刚弓"],[200207,"漩涡"],[200208,"猛击"],[200209,"轻盈"],[200210,"剑刃之舞"],
+    [200211,"英勇"],[200212,"鼓舞"],[200213,"铁之歌"],[200214,"交织之舞"],[200215,"祭仪"],
+    [200216,"以战养战"],[200217,"爆发强效"],[200218,"无尽之舞"],[200219,"爆发专精"],[200220,"充能技"],
+    [200221,"充能强效"],[200222,"疾雷之舞"],[200223,"甘霖"],[200224,"精通强效"],[200225,"散霰之舞"],
+    [200226,"冻伤"],[200227,"锐利"],[200228,"星晶之舞"],[200229,"结晶偏光"],[200230,"结晶赋能"],
+    [200231,"铁壁"],[200232,"决斗之舞"],[200233,"凝血护佑"],[200234,"强效治疗"],[200235,"处刑"],
+    [200236,"裁决"],[200237,"挑战者"],[200238,"碎果细屑"],[200239,"碎果裂片"],[200240,"碎果残块"],
+    [200241,"决斗之舞"],[200242,"剑刃之舞"],[200243,"星晶之舞"],[200244,"交织之舞"],[200245,"无尽之舞"],
+    [200246,"结晶偏光"],[200247,"鼓舞"],[200248,"英勇"],[200249,"漩涡"],[200250,"挑战者"],
+    [200251,"处刑"],[200252,"结晶赋能"],[200253,"爆发专精"],[200254,"裁决"],[200255,"锐利"],
+    [200256,"爆发强效"],[200257,"精通强效"],[200258,"铁壁"],[200259,"铁之歌"],[200260,"猛击"],
+    [200261,"满来之舞"],[200262,"传导率"]
+];
+
+// 名片卡数据（完整版，共约278条）
+const namecardItems = [
+    [210001,"原神·印象"],[210002,"纪行·捕风"],[210003,"安柏·兔兔"],[210004,"可莉·爆弹"],
+    [210005,"迪卢克·燃烧"],[210006,"雷泽·奔狼"],[210007,"温迪·天青"],[210008,"琴·风向"],
+    [210009,"芭芭拉·流淌"],[210010,"凯亚·孔雀"],[210011,"丽莎·沙漏"],[210012,"砂糖·创生"],
+    [210013,"菲谢尔·夜鸦"],[210014,"诺艾尔·守护"],[210015,"莫娜·天星"],[210016,"班尼特·认可"],
+    [210017,"香菱·出锅"],[210018,"行秋·雨虹"],[210019,"七七·冷藏"],[210020,"刻晴·雷楔"],
+    [210021,"成就·游遍"],[210022,"成就·殊技"],[210023,"成就·侠行"],[210024,"蒙德·风吟"],
+    [210025,"璃月·岩寂"],[210026,"成就·虹色"],[210027,"成就·强弓"],[210028,"成就·挑战"],
+    [210029,"成就·深秘"],[210030,"成就·山民"],[210031,"成就·雪乡"],[210032,"成就·合扇"],
+    [210033,"成就·相逢"],[210038,"凝光·凤仪"],[210039,"北斗·拔锚"],[210040,"重云·灵刃"],
+    [210041,"成就·挑战·其二"],[210042,"纪行·熄星"],[210043,"迪奥娜·呜喵"],[210044,"钟离·天星"],
+    [210045,"辛焱·唱罢"],[210046,"公子·魔装"],[210047,"蒙德·英名"],[210048,"蒙德·祝愿"],
+    [210049,"璃月·千帆"],[210050,"璃月·云间"],[210051,"成就·挑战·其三"],[210052,"成就·雪峰"],
+    [210053,"甘雨·麟迹"],[210054,"阿贝多·阳花"],[210055,"纪行·白垩"],[210056,"忍冬·古树"],
+    [210057,"庆典·无相"],[210058,"魈·傩面"],[210059,"胡桃·安神"],[210060,"纪行·明霄"],
+    [210061,"庆典·灯昼"],[210062,"庆典·棋谭"],[210063,"罗莎莉亚·苦役"],[210064,"纪行·风花"],
+    [210065,"庆典·盛宴"],[210066,"庆典·光鳞"],[210067,"庆典·慧果"],[210068,"庆典·躲猫"],
+    [210069,"烟绯·公正"],[210070,"优菈·冰印"],[210071,"纪行·绕尘"],[210072,"成就·壶歌"],
+    [210073,"枫原万叶·秋山椛狩"],[210074,"纪行·盛夏"],[210075,"成就·旅居"],[210076,"庆典·浩瀚"],
+    [210077,"庆典·魔球"],[210078,"庆典·斗剧"],[210079,"稻妻·神樱"],[210080,"纪行·鸣神大社"],
+    [210081,"神里绫华·扇子"],[210082,"宵宫·琉金火花"],[210083,"早柚·不倒貉貉"],[210084,"稻妻·雷电之纹"],
+    [210085,"稻妻·神里之纹"],[210086,"成就·门扉"],[210087,"成就·遍历"],[210088,"成就·石龙"],
+    [210089,"成就·繁花"],[210090,"稻妻·九条之纹"],[210091,"庆典·妙算"],[210092,"雷电将军·开眼"],
+    [210093,"珊瑚宫心海·渊"],[210094,"九条裟罗·天狗"],[210095,"埃洛伊·曙光记"],[210096,"纪行·逐月"],
+    [210097,"稻妻·珊瑚宫之纹"],[210098,"成就·敲针"],[210099,"庆典·倾耳"],[210100,"庆典·一揆"],
+    [210101,"托马·炎袖"],[210102,"纪行·神将"],[210103,"稻妻·鹫羽"],[210104,"五郎·悠犬"],
+    [210105,"一斗·鬼颜"],[210106,"纪行·白英"],[210107,"申鹤·栉掠"],[210108,"云堇·对韵"],
+    [210109,"稻妻·常世"],[210110,"纪行·流彩"],[210111,"庆典·觥筹"],[210112,"八重神子·梦狐"],
+    [210113,"纪行·蛰醒"],[210114,"神里绫人·涟漪"],[210115,"流明·辉石"],[210116,"成就·雷音"],
+    [210117,"成就·层岩"],[210118,"纪行·容彩"],[210119,"夜兰·一掷"],[210120,"久岐忍·络"],
+    [210121,"纪行·天命"],[210122,"鹿野院平藏·鞠毬"],[210123,"纪行·海蓝"],[210124,"提纳里·沐露"],
+    [210125,"柯莱·豹蔚"],[210126,"多莉·魔灯"],[210127,"纪行·深林"],[210128,"成就·漫行"],
+    [210129,"成就·逢缘"],[210130,"须弥·瑶林"],[210131,"须弥·照览"],[210132,"须弥·正明"],
+    [210133,"纪行·归风"],[210134,"赛诺·幽缄"],[210135,"坎蒂丝·苍鹭"],[210136,"妮露·莲舞"],
+    [210137,"成就·七芒"],[210138,"须弥·踏沙"],[210139,"成就·镜梦"],[210140,"纳西妲·仰月"],
+    [210141,"莱依拉·昼梦"],[210142,"纪行·蕈原"],[210143,"流浪者·浮歌"],[210144,"珐露珊·封秘"],
+    [210145,"成就·七圣"],[210146,"纪行·灵津"],[210147,"艾尔海森·诲明"],[210148,"瑶瑶·月桂"],
+    [210149,"庆典·岫云"],[210150,"纪行·合韵"],[210151,"须弥·砂岚"],[210152,"迪希雅·净焰"],
+    [210153,"米卡·索引"],[210154,"纪行·意巧"],[210155,"白术·祛风"],[210156,"卡维·穹庭"],
+    [210157,"成就·万种"],[210158,"成就·槿暮"],[210159,"须弥·大梦"],[210160,"须弥·甘露"],
+    [210161,"纪行·荣冕"],[210162,"绮良良·猫箱"],[210163,"纪行·秘典"],[210164,"纪行·溢彩"],
+    [210165,"林尼·弄假"],[210166,"琳妮特·成真"],[210167,"菲米尼·行进"],[210168,"枫丹·审判"],
+    [210169,"成就·轨迹"],[210170,"成就·游涉"],[210171,"枫丹·奇械"],[210172,"枫丹·新闻"],
+    [210173,"纪行·源水"],[210174,"那维莱特·流澜"],[210175,"莱欧斯利·缄锁"],[210176,"纪行·沉星"],
+    [210177,"庆典·奏雅"],[210178,"成就·永续"],[210179,"枫丹·罚赎"],[210180,"芙宁娜·欢宴"],
+    [210181,"夏洛蒂·独家"],[210182,"枫丹·浑然"],[210183,"纪行·旋舞"],[210184,"娜维娅·刺玫"],
+    [210185,"夏沃蕾·贰型"],[210186,"纪行·时雕"],[210187,"闲云·鹤云"],[210188,"嘉明·文仔"],
+    [210189,"成就·仙谷"],[210190,"沉玉·投珑"],[210191,"纪行·彩鹞"],[210192,"专辑·闪耀的群星"],
+    [210193,"千织·展袖"],[210194,"纪行·魔萃"],[210195,"阿蕾奇诺·法度"],[210196,"枫丹·调律"],
+    [210197,"成就·掣鲸"],[210198,"枫丹·露泉"],[210199,"纪行·邦摇"],[210200,"克洛琳德·取人"],
+    [210201,"希格雯·疗法"],[210202,"赛索斯·跋灵"],[210203,"成就·诗页"],[210204,"纪行·衍演"],
+    [210205,"艾梅莉埃·后调"],[210206,"纪行·拟像"],[210207,"庆典·盛宴·其二"],[210208,"基尼奇·阿乔"],
+    [210209,"玛拉妮·鲨鲨"],[210210,"卡齐娜·转转"],[210211,"纳塔·神军"],[210212,"纳塔·炎龙"],
+    [210213,"成就·尽头"],[210214,"成就·喵运"],[210215,"纳塔·归火"],[210216,"成就·夜主"],
+    [210217,"纪行·源火"],[210218,"庆典·甘脆"],[210219,"希诺宁·律动"],[210220,"纪行·神诞"],
+    [210221,"恰斯卡·全弹"],[210222,"欧洛伦·夜翳"],[210223,"纳塔·空梦"],[210224,"成就·战意"],
+    [210225,"纪行·灵织"],[210226,"玛薇卡·日冕"],[210227,"茜特菈莉·白星"],[210228,"蓝砚·银燕"],
+    [210229,"成就·览尽"],[210230,"成就·灼燃"],[210231,"成就·乐集"],[210232,"纪行·新火"],
+    [210233,"梦见月瑞希·噩喰"],[210234,"庆典·炙热"],[210235,"纪行·绮梦"],[210236,"瓦雷莎·力源"],
+    [210237,"伊安珊·不懈"],[210238,"纳塔·眬瞳"],[210239,"成就·寂宁"],[210240,"纪行·荣花"],
+    [210241,"爱可菲·韵味"],[210242,"伊法·哥们"],[210243,"纪行·舞剧"],[210244,"丝柯克·孤影"],
+    [210245,"塔利雅·天职"],[210246,"庆典·宴飨"],[210247,"纪行·推想"],[210248,"伊涅芙·指令"],
+    [210249,"纳塔·煅轮"],[210250,"纳塔·巡风"],[210251,"纪行·悠悠"],[210252,"庆典·鲔米"],
+    [210253,"菈乌玛·枝角"],[210254,"菲林斯·誓灯"],[210255,"爱诺·哎鸭"],[210256,"挪德卡莱·月色"],
+    [210257,"挪德卡莱·圣域"],[210258,"成就·久别"],[210259,"纪行·冰月"],[210260,"庆典·至味"],
+    [210261,"奈芙尔·秘闻"],[210262,"纪行·故墟"],[210263,"杜林·曜心"],[210264,"雅珂达·帮手"],
+    [210265,"纪行·炽雪"],[210266,"庆典·梦读"],[210267,"哥伦比娅·几时"],[210268,"兹白·烟景"],
+    [210269,"叶洛亚·魇莺"],[210270,"成就·眺远"],[210271,"挪德卡莱·长灯"],[210272,"纪行·奔霄"],
+    [210273,"法尔伽·头狼"],[210274,"纪行·北风"],[210275,"莉奈娅·娑响"],[210276,"蒙德·望楼"],
+    [210277,"空殿·满忆"],[210278,"纪行·逢归"]
+];
+
+// 头像框数据
+const avatarFrameItems = [
+    [216001,"薄光"],[216002,"初辉"],[216003,"昭耀"],[216004,"魄流盈"]
+];
+
+// 角色皮肤数据
+const skinItems = [
+    [340000,"闪耀协奏"],[340001,"海风之梦"],[340002,"纱中幽兰"],[340003,"霓裾翩跹"],
+    [340004,"殷红终夜"],[340005,"极夜真梦"],[340006,"古恩希尔德的传承"],[340007,"100%侦察骑士"],
+    [340008,"星与月之约"],[340009,"致教会自由人"],[340010,"花时来信"],[340011,"叶隐芳名"],
+    [340012,"琪花星烛"],[340013,"帆影游风"],[340014,"冷花幽露"],[340015,"玄玉瑶芳"],
+    [340016,"雨化竹身"],[340017,"莎邦之息"],[340018,"倩影游侠"],[340019,"宿雪桃红"],
+    [340020,"岁夜欢哗"],[340021,"静暇雅宴"],[340022,"炽绘奇旅"],[340023,"复地重天"],
+    [340024,"复地重天"],[340025,"故事的远方"],[340026,"莘露的赠礼"],[340027,"聆雨听竹"]
+];
+
+// 武器幻化数据
+const weaponSkinItems = [
+    [341101,"蛇噬"],[341102,"蛇噬·真化"],[341201,"赫烈"],[341202,"赫烈·真化"],
+    [341301,"碎月"],[341302,"碎月·真化"],[341401,"圣缚"],[341402,"圣缚·真化"],
+    [341501,"贯星"],[341502,"贯星·真化"],[341001,"幻煌至形"],[341002,"幻煌至形·真化"],
+    [341801,"幻礼·星兆"],[341901,"无毁·督兰嘉德"]
+];
+        // 通用渲染函数
+    function renderGrid(containerId, items) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    container.innerHTML = '';
+    items.forEach(([id, name]) => {
+        const card = document.createElement('div');
+        card.className = 'item-card';
+        card.innerHTML = `<div class="item-name">${escapeHtml(name)}</div><div class="item-id">${id}</div>`;
+        
+        card.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const cmd = `/give ${id} x1`;
+            
+            // 方法：使用 textarea + execCommand（移动端最稳）
+            const textarea = document.createElement('textarea');
+            textarea.value = cmd;
+            textarea.style.position = 'fixed';
+            textarea.style.top = '-9999px';
+            textarea.style.left = '-9999px';
+            textarea.style.opacity = '0';
+            document.body.appendChild(textarea);
+            textarea.select();
+            textarea.setSelectionRange(0, cmd.length);
+            let success = false;
+            try {
+                success = document.execCommand('copy');
+            } catch (err) {}
+            document.body.removeChild(textarea);
+            
+            // 无论成功与否都显示提示（用户能看到反馈）
+            let tipText = success ? '✅ 复制成功' : '❌ 复制失败，请手动复制';
+            
+            // 优先使用原页面的 showCopyTip
+            if (typeof window.showCopyTip === 'function') {
+                window.showCopyTip(); // 原函数可能会显示默认文案，但没关系
+                // 若原函数不显示具体成功/失败，我们自己补一个额外提示
+                if (!success) {
+                    alert(tipText + '\n' + cmd);
+                }
+            } else {
+               // 自定义提示（仅解决遮挡，颜色保留）
+const tip = document.createElement('div');
+tip.textContent = tipText;
+tip.style.position = 'fixed';
+tip.style.top = '20px';                      // 顶部显示
+tip.style.bottom = 'auto';
+tip.style.left = '50%';
+tip.style.transform = 'translateX(-50%)';
+tip.style.backgroundColor = success ? 'rgba(0,0,0,0.2)' : '#ff4d4f';
+tip.style.color = '#fff';
+tip.style.padding = '12px 24px';
+tip.style.borderRadius = '48px';
+tip.style.fontSize = '16px';
+tip.style.zIndex = '2147483647';
+tip.style.whiteSpace = 'nowrap';
+tip.style.pointerEvents = 'none';
+tip.style.backdropFilter = 'none';
+tip.style.willChange = 'transform';
+document.body.appendChild(tip);
+setTimeout(() => tip.remove(), 2000);
+                
+                if (!success) {
+                    // 再弹出一个可手动复制的对话框
+                    setTimeout(() => {
+                        const modal = document.createElement('div');
+                        modal.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.85);z-index:100001;display:flex;align-items:center;justify-content:center;padding:20px;';
+                        modal.innerHTML = `
+                            <div style="background:white;border-radius:24px;padding:20px;max-width:90%;text-align:center;">
+                                <div style="font-size:16px;font-weight:bold;margin-bottom:12px;">📋 请手动复制</div>
+                                <div style="background:#f0f5ff;padding:12px;border-radius:12px;font-family:monospace;word-break:break-all;margin-bottom:16px;">${cmd}</div>
+                                <button style="background:#1677ff;color:white;border:none;padding:10px 20px;border-radius:40px;width:100%;">我已复制</button>
+                            </div>
+                        `;
+                        modal.querySelector('button').onclick = () => modal.remove();
+                        document.body.appendChild(modal);
+                    }, 100);
+                }
+            }
+        });
+        
+        container.appendChild(card);
+    });
+}
+
+        function escapeHtml(str) {
+            return str.replace(/[&<>]/g, function(m) {
+                if (m === '&') return '&amp;';
+                if (m === '<') return '&lt;';
+                if (m === '>') return '&gt;';
+                return m;
+            });
+        }
+// ========== 道具大全独立搜索功能 ==========
+let allItemCards = []; // 存储所有卡片信息 { id, name, moduleId, cardElement }
+
+// 收集当前模块所有可见/不可见的卡片（所有子模块中的卡片）
+function collectAllItemCards() {
+    allItemCards = [];
+    const modules = ['virtualItemSection', 'constellationMaterialSection', 'renameCardSection', 'characterSection', 
+                     'upgradeItemSection', 'oculusSection', 'talentMaterialSection', 'consumableSection', 
+                     'windGliderSection', 'buffSection', 'namecardSection', 'avatarFrameSection', 
+                     'skinSection', 'weaponSkinSection'];
+    modules.forEach(moduleId => {
+        const moduleDiv = document.getElementById(moduleId);
+        if (moduleDiv) {
+            const cards = moduleDiv.querySelectorAll('.item-card');
+            cards.forEach(card => {
+                const nameDiv = card.querySelector('.item-name');
+                const idDiv = card.querySelector('.item-id');
+                if (nameDiv && idDiv) {
+                    allItemCards.push({
+                        id: idDiv.textContent.trim(),
+                        name: nameDiv.textContent.trim(),
+                        moduleId: moduleId,
+                        cardElement: card
+                    });
+                }
+            });
+        }
+    });
+}
+
+// 高亮文本
+function highlightText(text, term) {
+    if (!term) return text;
+    const regex = new RegExp(`(${term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+    return text.replace(regex, '<span class="highlight">$1</span>');
+}
+
+// 执行搜索
+function performItemSearch() {
+    const input = document.getElementById('itemSearchInput');
+    const term = input.value.trim();
+    const resultsContainer = document.getElementById('itemSearchResults');
+    const clearBtn = document.getElementById('itemSearchClear');
+    
+    if (term === '') {
+        resultsContainer.style.display = 'none';
+        clearBtn.style.display = 'none';
+        return;
+    }
+    
+    clearBtn.style.display = 'block';
+    const lowerTerm = term.toLowerCase();
+    const results = allItemCards.filter(card => 
+        card.name.toLowerCase().includes(lowerTerm) || card.id.includes(lowerTerm)
+    );
+    
+    if (results.length === 0) {
+        resultsContainer.innerHTML = '<div style="padding: 16px; text-align: center; color: #94a3b8;">未找到相关道具</div>';
+        resultsContainer.style.display = 'block';
+        return;
+    }
+    
+    let html = '';
+    results.forEach(res => {
+        const highlightedName = highlightText(res.name, term);
+        const highlightedId = highlightText(res.id, term);
+        // 模块名称映射
+        const moduleNames = {
+            virtualItemSection: '虚拟道具', constellationMaterialSection: '命座材料', renameCardSection: '改名卡',
+            characterSection: '角色', upgradeItemSection: '升级道具', oculusSection: '神瞳',
+            talentMaterialSection: '天赋材料', consumableSection: '消耗品', windGliderSection: '风之翼',
+            buffSection: '增益Buff', namecardSection: '名片卡', avatarFrameSection: '头像框',
+            skinSection: '角色皮肤', weaponSkinSection: '武器幻化'
+        };
+        const moduleName = moduleNames[res.moduleId] || '道具';
+        html += `
+            <div class="search-result-item" data-module="${res.moduleId}" data-card-idx="${allItemCards.indexOf(res)}">
+                <div><span class="search-result-name">${highlightedName}</span> <span class="search-result-id">${highlightedId}</span></div>
+                <div class="search-result-module">📁 ${moduleName}</div>
+            </div>
+        `;
+    });
+    resultsContainer.innerHTML = html;
+    resultsContainer.style.display = 'block';
+    
+    // 绑定点击跳转事件
+    resultsContainer.querySelectorAll('.search-result-item').forEach(item => {
+        item.addEventListener('click', () => {
+            const moduleId = item.getAttribute('data-module');
+            const idx = parseInt(item.getAttribute('data-card-idx'));
+            if (!isNaN(idx) && allItemCards[idx]) {
+                const targetCard = allItemCards[idx].cardElement;
+                const targetModule = document.getElementById(moduleId);
+                if (targetModule) {
+                    // 切换到对应的子模块
+                    document.querySelectorAll('.item-module').forEach(module => {
+                        module.style.display = 'none';
+                    });
+                    targetModule.style.display = 'block';
+                    // 更新导航按钮高亮
+                    document.querySelectorAll('.sub-nav-btn').forEach(btn => {
+                        btn.classList.remove('active');
+                        if (btn.getAttribute('data-target') === moduleId) {
+                            btn.classList.add('active');
+                        }
+                    });
+                    // 滚动到卡片位置
+                    setTimeout(() => {
+                        targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        // 添加临时高亮效果
+                        targetCard.style.transition = 'background 0.3s';
+                        targetCard.style.backgroundColor = '#fff3b0';
+                        setTimeout(() => {
+                            targetCard.style.backgroundColor = '';
+                        }, 1500);
+                    }, 100);
+                }
+            }
+            // 清空搜索框并隐藏结果
+            document.getElementById('itemSearchInput').value = '';
+            resultsContainer.style.display = 'none';
+            document.getElementById('itemSearchClear').style.display = 'none';
+        });
+    });
+}
+
+// 清空搜索
+function clearItemSearch() {
+    const input = document.getElementById('itemSearchInput');
+    input.value = '';
+    document.getElementById('itemSearchResults').style.display = 'none';
+    document.getElementById('itemSearchClear').style.display = 'none';
+    input.focus();
+}
+
+// 初始化搜索监听
+function initItemSearch() {
+    const input = document.getElementById('itemSearchInput');
+    const searchBtn = document.getElementById('itemSearchBtn');
+    const clearBtn = document.getElementById('itemSearchClear');
+    
+    // 收集卡片（渲染完成后调用）
+    collectAllItemCards();
+    
+    searchBtn.addEventListener('click', performItemSearch);
+    input.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') performItemSearch();
+    });
+    clearBtn.addEventListener('click', clearItemSearch);
+    // 点击外部关闭结果（可选）
+    document.addEventListener('click', (e) => {
+        const wrapper = document.querySelector('.search-box-wrapper');
+        if (wrapper && !wrapper.contains(e.target)) {
+            document.getElementById('itemSearchResults').style.display = 'none';
+        }
+    });
+}
+        // 切换模块
+        function switchModule(targetId) {
+            document.querySelectorAll('.item-module').forEach(module => {
+                module.style.display = 'none';
+            });
+            document.getElementById(targetId).style.display = 'block';
+            document.querySelectorAll('.sub-nav-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-target') === targetId) {
+                    btn.classList.add('active');
+                }
+            });
+        }
+
+        // 绑定切换事件
+        document.querySelectorAll('.sub-nav-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const targetId = this.getAttribute('data-target');
+                if (targetId) switchModule(targetId);
+            });
+        });
+
+        // 渲染所有网格
+        renderGrid('virtualItemGrid', virtualItems);
+        renderGrid('constellationMaterialGrid', constellationItems);
+        renderGrid('renameCardGrid', renameCardItems);
+        renderGrid('characterGrid', characterItems);
+        renderGrid('upgradeItemGrid', upgradeItems);
+        renderGrid('oculusGrid', oculusItems);
+        renderGrid('talentMaterialGrid', talentItems);
+renderGrid('consumableGrid', consumableItems);
+renderGrid('windGliderGrid', windGliderItems);
+renderGrid('buffGrid', buffItems);
+renderGrid('namecardGrid', namecardItems);
+renderGrid('avatarFrameGrid', avatarFrameItems);
+renderGrid('skinGrid', skinItems);
+renderGrid('weaponSkinGrid', weaponSkinItems);
+// 独立搜索初始化（需要等待所有卡片渲染到DOM）
+initItemSearch();
+    </script>
+</section>
 
     <!-- 页脚 -->
     <div class="site-footer">
@@ -7085,7 +8046,7 @@ function getModuleName(element) {
                 spiralSection: '深境螺旋', dreamSection: '自定义怪物', questNewSection: '祈愿卡池',
                 questSection: '任务剧情', itemSection: '幽境危战', achievementSection: '成就',
                 geographySection: '地理志', tutorialSection: '教程', eventSection: '活动',
-                loadTipSection: '加载提示', homeSection: '首页'
+                loadTipSection: '道具大全', homeSection: '首页'
             };
             return map[id] || id.replace('Section', '');
         }
@@ -8395,6 +9356,19 @@ if (typeof originalToggle === 'function') {
 // 设置滑块初始填充
 const initPercent = (levelSlider.value / 20) * 100;
 levelSlider.style.setProperty('--fill-percent', initPercent + '%');
+// 道具大全分类切换函数
+function toggleItemCategory(sectionId) {
+    document.querySelectorAll('.item-sub-section').forEach(sec => {
+        sec.style.display = 'none';
+    });
+    const target = document.getElementById(sectionId);
+    if (target) target.style.display = 'block';
+    
+    // 更新按钮高亮
+    const btns = document.querySelectorAll('#itemCategoryNav .sub-nav-btn');
+    btns.forEach(btn => btn.classList.remove('active'));
+    if (event && event.currentTarget) event.currentTarget.classList.add('active');
+}
 </script>
 </div>
 </body>
